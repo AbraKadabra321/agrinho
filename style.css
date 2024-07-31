@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(201, 255, 147);
+    width: 100vw;
+    height: 15vh;
+
+}
+header div{
+    margin-right: 20px;
+    
+}
+header div h1{
+    font-size: 30px;
+}
+header nav{
+    margin: 20px;
+}
+header nav a{
+    text-decoration: none;
+    margin: 20px;
+}
+/* section */
+section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 85vh;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    background-color: rgb(201, 255, 147);
+    border-radius: 12px;
+    padding: 20px;
+}
+.dados-text{
+    font-size: 20px;
+}
+.dados{
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+}

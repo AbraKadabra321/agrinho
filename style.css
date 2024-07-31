@@ -1,3 +1,6 @@
+:root {
+    --color-pri:#c2ffc2;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -6,7 +9,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(201, 255, 147);
+    background-color: var(--color-pri);
     width: 100vw;
     height: 15vh;
 
@@ -25,10 +28,11 @@ header nav a{
     text-decoration: none;
     margin: 20px;
 }
-/* section */
-section{
+/* section de login*/
+.sec-login{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100vw;
     height: 85vh;
@@ -37,16 +41,32 @@ section{
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 500px;
-    background-color: rgb(201, 255, 147);
-    border-radius: 12px;
+    background-color: var(--color-pri);
+    border-radius: 6px;
     padding: 20px;
+    margin-bottom: 20px;
 }
 .dados-text{
     font-size: 20px;
+    margin-bottom: 10px;
 }
 .dados{
     height: 40px;
-    border-radius: 15px;
+    border-radius: 6px;
     border: none;
+    margin-bottom: 30px;
+    background-color: white;
+    font-size: 16px;
+}
+.new-acc{
+    border: 1px solid var(--color-pri);
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 6px;
+}
+.new-acc a{
+    color: #ffffc2;
 }

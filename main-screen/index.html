@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <header>
+    <div>
+        <h1>FIBRA</h1>
+        <input type="search" id="search">
+    </div>
+    <nav>
+        <ul>
+            <li class="nav-btn mudar-cor" onclick="mudarCor(this)"><i class="fa-solid fa-house nav-icon"></i></li>
+            <li class="nav-btn mudar-cor" onclick="mudarCor(this)"><i class="fa-solid fa-store nav-icon"></i></li>
+            <li class="nav-btn mudar-cor" onclick="mudarCor(this)"><i class="fa-solid fa-cart-shopping nav-icon"></i></li>
+            <li class="nav-btn mudar-cor" onclick="mudarCor(this)"><i class="fa-solid fa-message nav-icon"></i></li>
+        </ul>
+    </nav>
+    <ul>
+         <li class="nav-btn mudar-cor" onclick="mudarCor(this)"><i class="fa-solid fa-bell nav-icon"></i></li>
+         <li class="nav-btn"><i class="fa-solid fa-user nav-icon"></i></li>
+         <li class="nav-btn"><i class="fa-solid fa-crown nav-icon"></i></li>
+    </ul>
+   </header>
+   <section class="home">
+    <ul class="post-local">
+        <li class="post">
+            <div class="post-perfil">
+                <div>
+                    <i class="fa-solid fa-user nav-icon"></i>
+                    <p>Name</p>
+                </div>
+                <div>
+                    <p>1hr</p>
+                    <i class="fa-solid fa-triangle-exclamation nav-icons"></i>
+                </div>
+            </div>
+            <div class="post-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="post-img">
+
+            </div>
+            <div class="post-likes">
+                <p>likes</p>
+                <p>coment</p>
+                <p>compart</p>
+            </div>
+            <div class="post-utilities">
+                <i class="fa-regular fa-heart nav-icons"></i>
+                <i class="fa-regular fa-comments nav-icons"></i>
+                <i class="fa-regular fa-share-from-square nav-icons"></i>
+            </div>
+        </li>
+    </ul>
+   </section>
+   <script>
+    function mudarCor(elementoClicado) {
+        // Primeiro, redefina a cor de todos os elementos
+        var itens = document.getElementsByClassName("mudar-cor");
+        for (var i = 0; i < itens.length; i++) {
+            itens[i].style.backgroundColor = "";
+            itens[i].style.borderRadius = "";
+            itens[i].style.color = "";
+            itens[i].style.border = ""; // Defina para a cor original ou para uma cor específica
+        }
+        
+        // Agora, mude a cor do elemento clicado
+        elementoClicado.style.border = "1px #E5E0DF solid";
+        elementoClicado.style.backgroundColor = "#1b5f39d6";
+        elementoClicado.style.borderRadius = "12px";
+        elementoClicado.style.color = "#60B5E5";    
+        elementoClicado.style.transition = '0.5s';
+    }
+</script>
+</body>
+</html>

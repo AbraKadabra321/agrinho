@@ -86,7 +86,7 @@ header ul li a{
     font-size: 20px;
     text-decoration: none;
 }
-section{
+.versus{
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -168,8 +168,14 @@ section{
 }
 
 /* guia */
-.planejamento {
+section h1{
+    text-align: center;
+}
+.planejamento , .porte{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .planejamento ul, .porte ul{
     width: 60%;
@@ -182,7 +188,7 @@ section{
     background-color: var(--color-pri);
     width: 97.1%;
     display: flex;
-    flex-direction:column;
+    flex-wrap: wrap;
     padding: 20px;
     border-radius: 12px;
     position: relative;

@@ -13,6 +13,7 @@
 }
 body{
     background: var(--color-bg);
+    overflow-x: hidden;
 }
 header{
     display: flex;

@@ -170,13 +170,13 @@ header ul li a{
 section h1{
     text-align: center;
 }
-.planejamento , .porte{
+.planejamento , .porte, .amizades{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.planejamento ul, .porte ul{
+.planejamento ul, .porte ul, .amizades ul{
     width: 60%;
     height: 100%;
     display: flex;

@@ -195,6 +195,7 @@ section h1{
 }
 .perguntas h2{
     margin-bottom: 20px;
+    margin-right: 50%;
 }
 .res{
     color: var(--color-text);

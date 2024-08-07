@@ -184,11 +184,3 @@ section{
     border-radius: 12px;
     position: relative;
 }
-
-.perguntas label{
-    text-align: end;
-    font-size: 30px;
-}
-.box{
-    display: none;
-}

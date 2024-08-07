@@ -1,0 +1,218 @@
+:root {
+    /* colors-body */
+    --color-bg:rgb(15,15,15);
+    --color-pri:rgb(39, 39, 39);
+    --color-border:#E5E0DF;
+    --color-sec:#FAF9F4;
+}
+*{
+    padding: 0PX;
+    margin: 0px;
+    color: white;
+    font-family: "Nunito", sans-serif;
+}
+body{
+    background: var(--color-bg);
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background: rgb(15,15,15);
+    position: relative;
+    margin-bottom: 20px;
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+header::after, header::before, .vs::after, .vs::before, .perguntas::after, .perguntas::before, .perguntasdois::after, .perguntasdois::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: conic-gradient(from var(--angle), blue, yellow,blue);
+    z-index: -1;
+    padding: 6px;
+    top: -1%;
+    animation: 5s spin linear infinite;
+    border-radius: 12px;
+}
+@keyframes spin{
+    from{
+        --angle:0deg
+    }
+    to{
+        --angle:360deg;
+    }
+}
+header::before, .vs::before, .perguntas::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+header::after, header::before{
+    top: -7%;
+   
+}
+.perguntas::after, .perguntas::before{
+    top: -5px;
+    right: -5px;
+    background: conic-gradient(from var(--angle),transparent 99%,  blue);
+  
+}
+.perguntasdois::after, .perguntasdois::before{
+    background: conic-gradient(from var(--angle),transparent 99%,  yellow);
+}
+header ul{
+    list-style-type: none;
+    flex: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header ul li{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li a{
+    font-size: 20px;
+    text-decoration: none;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+
+}
+.title{
+    margin-top: 20px;
+}
+.title h1{
+    font-size: 40px;
+}
+.title p{
+    font-size: 20px;
+    text-align: center;
+}
+.pai-vs{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start; 
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.vs{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+    background: var(--color-pri);
+    width: 700px;
+    height: 70%;
+    border-radius: 12px;
+    position: relative;
+    margin: 20px;
+}
+.title-vs{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.vs div{
+    width: 100%;
+    height: 60%;
+    border-radius: 12px;
+}
+.vs-imagemd{
+    background: url(field-3629120_1280.jpg);
+}
+.vs-imagem{
+    background: url(buildings-217878_1280.jpg);
+    background-size: cover;
+}
+.vs ul{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    list-style-type: none;
+    width: 80%;
+    height: 60%;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+.vs ul li p{
+    font-size: 20px;
+    text-align: center;
+    color: #d2cccb;
+}
+.vs ul li h1{
+    font-size: 32px;
+    text-align: center;
+}
+.vs ul li h2{
+    text-align: center;
+    font-size: 32px;
+}
+
+/* guia */
+.planejamento {
+    justify-content: center;
+}
+.planejamento ul, .porte ul{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.perguntas{
+    background-color: var(--color-pri);
+    width: 97.1%;
+    height: 6%;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+    border-radius: 12px;
+    position: relative;
+}
+.res{
+    display: none;
+}
+.perguntas label{
+    text-align: end;
+    font-size: 30px;
+}
+.box{
+    display: none;
+}
+#mais:checked ~ .res{
+    display: flex;
+}
+#plus:checked ~ .res{
+    display: flex;
+}
+#maismais:checked ~ .res{
+    display: flex;
+}
+#plusplus:checked ~ .res{
+    display: flex;
+}
+#porte-mais:checked ~ .res{
+    display: flex;
+}
+#porte-plus:checked ~ .res{
+    display: flex;
+}
+#porte-plusplus:checked ~ .res{
+    display: flex;
+}

@@ -189,7 +189,7 @@ section{
         font-size: 24px;
     }
     .title p{
-        font-size: 12px;
+        font-size: 16px;
     }
     .title-vs{
         font-size: 30px;
@@ -202,5 +202,8 @@ section{
     }
     .vs ul li h2{
     font-size: 22px;
+    }
+    .res{
+        font-size: 16px;
     }
 }

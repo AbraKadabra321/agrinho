@@ -80,7 +80,6 @@ header ul li{
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-    transition: 1s;
 }
 header ul li a{
     font-size: 20px;

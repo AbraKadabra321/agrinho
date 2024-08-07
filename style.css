@@ -178,7 +178,7 @@ section{
 .perguntas{
     background-color: var(--color-pri);
     width: 97.1%;
-    height: 15%;
+    height: 20%;
     display: grid;
     grid-template-columns: auto auto;
     padding: 20px;

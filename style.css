@@ -186,12 +186,16 @@ section{
     padding: 20px;
     border-radius: 12px;
     position: relative;
+    margin: 20px;
 }
 .perguntas h2{
     margin-bottom: 20px;
 }
 .res{
     color: var(--color-text);
+}
+.porte h1{
+    text-align: center;
 }
 @media(max-width:600px){
     .title h1{

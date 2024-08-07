@@ -179,8 +179,8 @@ section{
     background-color: var(--color-pri);
     width: 97.1%;
     height: 20%;
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-direction:column;
     padding: 20px;
     border-radius: 12px;
     position: relative;
@@ -196,25 +196,4 @@ section{
 }
 .box{
     display: none;
-}
-#mais:checked ~ .res{
-    display: flex;
-}
-#plus:checked ~ .res{
-    display: flex;
-}
-#maismais:checked ~ .res{
-    display: flex;
-}
-#plusplus:checked ~ .res{
-    display: flex;
-}
-#porte-mais:checked ~ .res{
-    display: flex;
-}
-#porte-plus:checked ~ .res{
-    display: flex;
-}
-#porte-plusplus:checked ~ .res{
-    display: flex;
 }

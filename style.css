@@ -2,8 +2,7 @@
     /* colors-body */
     --color-bg:rgb(15,15,15);
     --color-pri:rgb(39, 39, 39);
-    --color-border:#E5E0DF;
-    --color-sec:#FAF9F4;
+    --color-text:#d2cccb;
 }
 *{
     padding: 0PX;
@@ -21,7 +20,7 @@ header{
     align-items: center;
     width: 100vw;
     height: 10vh;
-    background: rgb(15,15,15);
+    background: var(--color-bg);
     position: relative;
     margin-bottom: 20px;
 }
@@ -62,11 +61,11 @@ header::after, header::before{
 .perguntas::after, .perguntas::before{
     top: -5px;
     right: -5px;
-    background: conic-gradient(from var(--angle),transparent 99%,  blue);
+    background: conic-gradient(from var(--angle),transparent 70%,  blue);
   
 }
 .perguntasdois::after, .perguntasdois::before{
-    background: conic-gradient(from var(--angle),transparent 99%,  yellow);
+    background: conic-gradient(from var(--angle),transparent 70%,  yellow);
 }
 header ul{
     list-style-type: none;
@@ -80,6 +79,8 @@ header ul li{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 12px;
+    transition: 1s;
 }
 header ul li a{
     font-size: 20px;
@@ -155,7 +156,7 @@ section{
 .vs ul li p{
     font-size: 20px;
     text-align: center;
-    color: #d2cccb;
+    color: var(--color-text);
 }
 .vs ul li h1{
     font-size: 32px;
@@ -188,6 +189,9 @@ section{
 }
 .perguntas h2{
     margin-bottom: 20px;
+}
+.res{
+    color: var(--color-text);
 }
 @media(max-width:600px){
     .title h1{

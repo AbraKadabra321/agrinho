@@ -184,3 +184,23 @@ section{
     border-radius: 12px;
     position: relative;
 }
+@media(max-width:600px){
+    .title h1{
+        font-size: 30px;
+    }
+    .title p{
+        font-size: 16px;
+    }
+    .title-vs{
+        font-size: 30px;
+    }
+    .vs ul li p{
+        font-size: 16px;
+    }
+    .vs ul li h1{
+        font-size: 22px;
+    }
+    .vs ul li h2{
+    font-size: 22px;
+    }
+}
